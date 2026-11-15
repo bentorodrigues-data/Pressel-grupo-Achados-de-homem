@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>ACHADOS DE HOMEM – Promoções e Cupons</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,800;1,900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#1a6bff;--glow:#2fa0ff;--silver:#d9dde3;--muted:#9aa6b8}
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%;margin:0;background:#000;color:var(--silver);font:400 16px/1.4 Inter,system-ui,sans-serif}
+.bg{position:fixed;inset:0;overflow:hidden;z-index:0;pointer-events:none;background:radial-gradient(70% 55% at 50% 30%,rgba(26,107,255,.26),transparent 70%)}
+.bg::after{content:"";position:absolute;inset:0;background:radial-gradient(65% 55% at 50% 50%,rgba(0,0,0,.6),rgba(0,0,0,.05) 100%)}
+.card{position:absolute;width:min(30vw,128px);padding:6px;border-radius:12px;background:#07101f;border:1px solid #14336b;text-align:center;opacity:.24;transform:rotate(var(--r));animation:float 7s ease-in-out infinite alternate}
+.card:nth-child(even){animation-delay:-3s}
+.card .ico{height:56px;display:grid;place-items:center;font-size:2rem;background:#0a1830;border-radius:8px}
+.card b{display:block;font-size:.62rem;margin:5px 0 2px;line-height:1.15}
+.card s{display:block;font-size:.62rem;color:var(--muted)}
+.card i{display:block;font:italic 800 .95rem "Exo 2",sans-serif;color:var(--glow)}
+.card em{position:absolute;top:-6px;right:-6px;background:var(--blue);color:#fff;font:italic 800 .6rem "Exo 2",sans-serif;padding:2px 6px;border-radius:99px}
+@keyframes float{from{transform:translateY(-6px) rotate(var(--r))}to{transform:translateY(6px) rotate(var(--r))}}
+.screen{position:relative;z-index:1;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:clamp(6px,1.6dvh,14px);padding:calc(env(safe-area-inset-top,0px) + 12px) 20px calc(env(safe-area-inset-bottom,0px) + 100px)}
+.seal{width:min(30dvh,62vw,290px);aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 40px rgba(47,160,255,.7),0 0 100px rgba(26,107,255,.4);animation:rise 1s ease-out both}
+.seal svg{width:100%;height:100%;display:block}
+@keyframes rise{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+h1,h2,.btn{font-family:"Exo 2",Impact,sans-serif;font-style:italic;margin:0}
+h1{font-weight:900;font-size:clamp(1.6rem,5.6dvh,2.4rem);line-height:1;background:linear-gradient(#fff,#7d8590);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 span{color:var(--blue);-webkit-text-fill-color:var(--blue);text-shadow:0 0 24px rgba(47,160,255,.6)}
+.sub{letter-spacing:.3em;font-size:.8rem;margin:0}
+.slogan{font:800 1.05rem "Exo 2",sans-serif;font-style:italic;margin:0}
+.slogan em{color:var(--glow)}
+h2{font-weight:800;font-size:clamp(1.2rem,3.6dvh,1.5rem);margin-top:clamp(4px,1.5dvh,12px)}
+.txt{color:var(--muted);max-width:34ch;margin:0;font-size:.95rem}
+.btn{display:inline-block;background:linear-gradient(180deg,#2f86ff,#0b4fd6);color:#fff;text-decoration:none;font-weight:800;font-size:1rem;padding:13px 26px;border-radius:999px;box-shadow:0 0 24px rgba(47,160,255,.55),inset 0 1px 0 rgba(255,255,255,.35);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 38px rgba(47,160,255,.85),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+small{color:var(--muted);font-size:.75rem}
+.toasts{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 12px);width:min(92vw,360px);display:flex;flex-direction:column;gap:6px;z-index:2;pointer-events:none}
+.note{display:flex;align-items:center;gap:10px;background:rgba(7,16,31,.92);border:1px solid #14336b;border-radius:999px;padding:9px 16px;font-size:.85rem;box-shadow:0 0 18px rgba(26,107,255,.3);animation:in .45s ease-out both;transition:opacity .4s,transform .4s}
+.note.out{opacity:0;transform:translateY(-8px)}
+.note b{color:var(--glow);font:italic 800 .95rem "Exo 2",sans-serif}
+.dot{width:8px;height:8px;border-radius:50%;background:#25d366;box-shadow:0 0 8px #25d366;flex:none}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="bg" id="bg" aria-hidden="true"></div>
+<main class="screen">
+<div class="seal"><svg viewBox="0 0 400 400" role="img" aria-label="Logo ACHADOS DE HOMEM – Promoções e Cupons">
+<defs>
+<linearGradient id="sv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#9aa1ab"/><stop offset="1" stop-color="#e8ebef"/></linearGradient>
+<linearGradient id="bl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b92ff"/><stop offset="1" stop-color="#0b4fd6"/></linearGradient>
+<radialGradient id="bgc" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#06204a"/><stop offset="1" stop-color="#02050b"/></radialGradient>
+<filter id="gw" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<circle cx="200" cy="200" r="199" fill="url(#bgc)"/>
+<circle cx="200" cy="200" r="188" fill="none" stroke="#2fa0ff" stroke-width="4" filter="url(#gw)"/>
+<circle cx="200" cy="200" r="176" fill="none" stroke="#0d2f6e" stroke-width="1.5"/>
+<g filter="url(#gw)" stroke="#cfd5dd" stroke-width="1.5" fill="url(#sv)"><path d="M150 84L142 44L172 64L200 28L228 64L258 44L250 84Z"/><rect x="150" y="84" width="100" height="10" rx="3"/></g>
+<g fill="#2fa0ff" stroke="#fff" stroke-width="1"><path d="M200 46l7 9-7 9-7-9z"/><path d="M174 70l5 6-5 6-5-6z"/><path d="M226 70l5 6-5 6-5-6z"/></g>
+<g font-family="'Exo 2',Impact,sans-serif" font-style="italic" font-weight="900" text-anchor="middle">
+<text x="200" y="172" font-size="74" textLength="310" lengthAdjust="spacingAndGlyphs" fill="url(#sv)" stroke="#5b6572" stroke-width=".8">ACHADOS</text>
+<text x="200" y="236" font-size="62" textLength="290" lengthAdjust="spacingAndGlyphs" fill="url(#bl)" filter="url(#gw)">DE HOMEM</text>
+<text x="200" y="266" font-size="13" font-weight="800" letter-spacing="2" fill="#d9dde3">PROMOÇÕES E CUPONS</text>
+<text x="200" y="298" font-size="17" font-weight="800" fill="#e8ebef">ECONOMIZE NOS</text>
+<text x="200" y="320" font-size="19" font-weight="800" fill="#2f8aff">MELHORES ACHADOS!</text>
+</g>
+<path d="M90 276H310" stroke="#2fa0ff" stroke-width="1.5" opacity=".8"/>
+<g fill="none" stroke="#2fa0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" filter="url(#gw)">
+<g transform="translate(132 350)"><circle r="9"/><path d="M0-5V0l4 2M-5-9l1-6h8l1 6M-5 9l1 6h8l1-6"/></g>
+<g transform="translate(166 350)"><path d="M-11 3v-4a11 11 0 0 1 22 0v4"/><rect x="-13" y="2" width="5" height="9" rx="2"/><rect x="8" y="2" width="5" height="9" rx="2"/></g>
+<g transform="translate(200 350)"><path d="M-10 12L2 0"/><rect x="-2" y="-12" width="16" height="8" rx="2" transform="rotate(45 6 -8)"/></g>
+<g transform="translate(234 350)"><rect x="-9" y="-4" width="18" height="17" rx="3"/><rect x="-4" y="-11" width="8" height="7"/><path d="M-4 3h8"/></g>
+<g transform="translate(268 350)"><rect x="-14" y="-7" width="28" height="15" rx="7"/><path d="M-7-2v6M-10 1h6"/><circle cx="6" cy="0" r="1.5"/><circle cx="10" cy="3" r="1.5"/></g>
+</g>
+</svg></div>
+<h1>ACHADOS <span>DE HOMEM</span></h1>
+<p class="sub">PROMOÇÕES E CUPONS</p>
+<p class="slogan">Economize nos <em>melhores achados!</em></p>
+<h2>Achados e cupons todo dia</h2>
+<p class="txt">Ofertas e cupons do Mercado Livre, Shopee, Amazon e muito mais, selecionados pra você.</p>
+<a class="btn" href="https://whatsapp.com/channel/0029VbEKsKzK5cDBlqFPcZ29" target="_blank" rel="noopener">Entrar no canal do WhatsApp</a>
+<small>© 2026 ACHADOS DE HOMEM</small>
+</main>
+<div class="toasts" id="toasts" aria-hidden="true"></div>
+<script>
+(function(){
+function rnd(n){return Math.floor(Math.random()*n)}
+function money(v){return "R$ "+String(v).replace(".",",")}
+var items=[["⌚","Smartwatch",120,3,2,-6],["🎧","Fone Bluetooth",80,66,1,5],["🪒","Barbeador elétrico",90,34,0,-3],["🔧","Kit de ferramentas",110,-3,34,4],["👟","Tênis casual",200,71,32,-5],["🧴","Kit barba",60,4,60,-4],["🔦","Lanterna tática",40,70,58,6],["🎮","Controle gamer",70,5,80,5],["🔌","Carregador turbo",50,68,82,-5]];
+var bg=document.getElementById("bg");
+items.forEach(function(d){
+var c=document.createElement("div");c.className="card";c.style.left=d[3]+"%";c.style.top=d[4]+"%";c.style.setProperty("--r",d[5]+"deg");
+[["div","ico",d[0]],["b","",d[1]],["s","",money(d[2])],["i","",money(d[2]/2)],["em","","-50%"]].forEach(function(p){var e=document.createElement(p[0]);if(p[1])e.className=p[1];e.textContent=p[2];c.append(e)});
+bg.append(c)});
+var first=[["Paulo","acabou de economizar",60],["Ricardo","acabou de economizar",45],["Anderson","economizou",70]];
+var names=["Marcos","Juliana","Fernanda","Lucas","Carla","Thiago","Camila","João","Bruna","Rafael","Patrícia","Diego","Mariana","Gabriel"];
+var verbs=["acabou de economizar","economizou"];
+var box=document.getElementById("toasts"),i=0;
+function next(){
+var d=i<first.length?first[i]:[names[rnd(names.length)],verbs[rnd(2)],30+5*rnd(9)];
+i++;
+var n=document.createElement("div");n.className="note";
+var dot=document.createElement("span");dot.className="dot";
+var t=document.createElement("span");t.append(d[0]+" "+d[1]+" ");
+var b=document.createElement("b");b.textContent=d[2]+"%";t.append(b);
+n.append(dot,t);box.append(n);
+var live=box.querySelectorAll(".note:not(.out)");
+if(live.length>2){var o=live[0];o.classList.add("out");setTimeout(function(){o.remove()},450)}
+}
+setTimeout(function(){next();setInterval(next,3500)},900);
+})();
+</script>
+</body>
+</html>
